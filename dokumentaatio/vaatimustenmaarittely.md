@@ -1,15 +1,15 @@
-# Vaatimustenmäärittely
+# Requirements specification
 
-## Sovelluksen tarkoitus
+## Application purpose
 
-## Käyttäjät
+## Users
 
-## Käyttöliittymäluonnos
+## User interface 
 
-## Perusversion tarjoama toiminnallisuus
+## Functionality
 
-### Ennen kirjautumista
+### Before logging in
 
-### Kirjautumisen jälkeen
+### Afer logging in
 
-## Jatkokehitysideoita
+## Ideas for further development
