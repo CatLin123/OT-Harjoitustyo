@@ -1,3 +1,6 @@
+from unittest.main import main
+
+
 class Maksukortti:
     def __init__(self, saldo):
         self.saldo = saldo
@@ -16,3 +19,4 @@ class Maksukortti:
         saldo_euroissa = round(self.saldo / 100, 2)
 
         return f"saldo: {saldo_euroissa}"
+
