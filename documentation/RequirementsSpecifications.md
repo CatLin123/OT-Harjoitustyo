@@ -4,9 +4,9 @@
 
 The application is a tool for butgeting, where the users can track montly spendigs. The user can set a monthly budget, add expences as different categories (e.g. groceries, clothes etc.) and track their monthly spendings.
 
-## User interface
+## User interface draft
 
-
+![](./Images/)
 
 ## Basic functionality
 
