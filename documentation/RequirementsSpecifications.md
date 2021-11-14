@@ -32,8 +32,8 @@ Landing page displays:
 
 Settings page displays:
 - Option to change montly budget
-- Option to delete existing categories
-- Option to add new category
+- Option to delete existing categories (min 1)
+- Option to add new category (max 7)
 - Option to delete account
 
 ## Additional ideas
