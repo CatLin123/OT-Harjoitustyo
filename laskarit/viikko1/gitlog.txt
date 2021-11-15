@@ -1,2 +1,378 @@
-'cat' is not recognized as an internal or external command,
-operable program or batch file.
+commit 33a2c3473fc1a35e0ef0459fad68f18f9e15cf12
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Sun Nov 14 17:48:25 2021 +0200
+
+    Update RequirementsSpecifications.md
+
+ documentation/RequirementsSpecifications.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 57fe5ccdefa89f9c90cdf7ba987960781837e410
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Sun Nov 14 17:47:23 2021 +0200
+
+    Update RequirementsSpecifications.md
+
+ documentation/RequirementsSpecifications.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e91aa7d51f80f785a6d08c730f9422ccf8280994
+Merge: 332aef2 0d1800d
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Sun Nov 14 17:43:21 2021 +0200
+
+    Merge branch 'master' of github.com:lindabjorkkis/OT-Harjoitustyo
+
+commit 332aef24e1f2656218d5cd75bf49007664a55e88
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Sun Nov 14 17:43:06 2021 +0200
+
+    initial commit
+
+ documentation/Images/{Budget app .jpg => Budget-app.jpg} | Bin
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0d1800df3e648c9cfef2f0bf9f256099fa85d6fc
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Sun Nov 14 17:38:04 2021 +0200
+
+    Update RequirementsSpecifications.md
+
+ documentation/RequirementsSpecifications.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 22cdc8b8bd477bfb4b3df392eedd7419e5743fd4
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Sun Nov 14 17:36:13 2021 +0200
+
+    initial commit
+
+ documentation/Images/Budget app .jpg | Bin 0 -> 3354312 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2daf73cbc209f40a33ad6862fedb7379533041b8
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Sun Nov 14 17:30:45 2021 +0200
+
+    Update RequirementsSpecifications.md
+
+ documentation/RequirementsSpecifications.md | 33 ++++++++++++++++++++++++++---
+ 1 file changed, 30 insertions(+), 3 deletions(-)
+
+commit 8954450f283179c651a469e7d8085c659909538e
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Sat Nov 13 14:17:21 2021 +0200
+
+    Update tuntikirjanpito.md
+
+ documentation/tuntikirjanpito.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 574f38f05dffabfe17102e54e01d9f0c51585bbc
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Sat Nov 13 14:09:22 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/Testikattavuusraportti.png        | Bin 0 -> 56541 bytes
+ laskarit/viikko2/unicafe/.coverage                 | Bin 0 -> 53248 bytes
+ laskarit/viikko2/unicafe/poetry.lock               | 152 +++++++++++++++++++++
+ laskarit/viikko2/unicafe/pyproject.toml            |  14 ++
+ .../src/__pycache__/kassapaate.cpython-39.pyc      | Bin 0 -> 1648 bytes
+ .../src/__pycache__/maksukortti.cpython-39.pyc     | Bin 0 -> 1006 bytes
+ .../src/tests/__pycache__/__init__.cpython-39.pyc  | Bin 0 -> 168 bytes
+ .../kassapaate_test.cpython-39-pytest-6.2.5.pyc    | Bin 0 -> 3545 bytes
+ .../maksukortti_test.cpython-39-pytest-6.2.5.pyc   | Bin 0 -> 1826 bytes
+ .../viikko2/unicafe/src/tests/kassapaate_test.py   |  68 +++++++++
+ tiedosto.gitignore                                 |   4 +-
+ 11 files changed, 237 insertions(+), 1 deletion(-)
+
+commit 34124b7c99b6aec07590be6056615301b0afba59
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 19:31:08 2021 +0200
+
+    initial commit
+
+ .../src/tests/__pycache__/__init__.cpython-39.pyc        | Bin 168 -> 0 bytes
+ .../maksukortti_test.cpython-39-pytest-6.2.5.pyc         | Bin 1826 -> 0 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit c24711334cb3c1120ec547c4d58f0e28bfab0783
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 19:30:06 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/unicafe/.coverage                 | Bin 53248 -> 0 bytes
+ .../src/__pycache__/maksukortti.cpython-39.pyc     | Bin 1006 -> 0 bytes
+ tiedosto.txt                                       |  38 ---------------------
+ tiedosto.txt.pub                                   |   1 -
+ 4 files changed, 39 deletions(-)
+
+commit edb497f005f7958b65cc68b34b660de6d138c894
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 19:27:32 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/unicafe/.coverage                 | Bin 0 -> 53248 bytes
+ laskarit/viikko2/unicafe/.coveragerc               |   3 -
+ laskarit/viikko2/unicafe/poetry.lock               | 198 ---------------------
+ laskarit/viikko2/unicafe/pyproject.toml            |  16 --
+ .../src/__pycache__/maksukortti.cpython-39.pyc     | Bin 0 -> 1006 bytes
+ laskarit/viikko2/unicafe/src/maksukortti.py        |   4 +
+ .../src/tests/__pycache__/__init__.cpython-39.pyc  | Bin 0 -> 168 bytes
+ .../maksukortti_test.cpython-39-pytest-6.2.5.pyc   | Bin 0 -> 1826 bytes
+ .../viikko2/unicafe/src/tests/maksukortti_test.py  |  20 ++-
+ tiedosto.gitignore                                 |   4 +
+ 10 files changed, 27 insertions(+), 218 deletions(-)
+
+commit 1c9a1eefd33a1008f0ee742f3f0b4955e2b1691a
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 18:45:40 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/unicafe/.coveragerc               |   3 +
+ laskarit/viikko2/unicafe/poetry.lock               | 198 +++++++++++++++++++++
+ laskarit/viikko2/unicafe/pyproject.toml            |  16 ++
+ laskarit/viikko2/unicafe/src/index.py              |  16 ++
+ laskarit/viikko2/unicafe/src/kassapaate.py         |  44 +++++
+ laskarit/viikko2/unicafe/src/maksukortti.py        |  18 ++
+ laskarit/viikko2/unicafe/src/tests/__init__.py     |   0
+ .../viikko2/unicafe/src/tests/maksukortti_test.py  |   9 +
+ 8 files changed, 304 insertions(+)
+
+commit e053f724a8502ce94e43e9521ce03923e524c1ec
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Fri Nov 12 18:15:17 2021 +0200
+
+    Update tuntikirjanpito.md
+
+ documentation/tuntikirjanpito.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1027722562bd11848a9f0800f56d2cfad6eea0ac
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 18:14:04 2021 +0200
+
+    initial commit
+
+ .../src/__pycache__/maksukortti.cpython-39.pyc           | Bin 1203 -> 0 bytes
+ .../src/tests/__pycache__/__init__.cpython-39.pyc        | Bin 172 -> 0 bytes
+ .../maksukortti_test.cpython-39-pytest-6.2.5.pyc         | Bin 3430 -> 0 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7c0648c0d4412fc441ab0b88c77f6b04c370b60a
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 18:10:36 2021 +0200
+
+    initial commit
+
+ .../src/__pycache__/maksukortti.cpython-39.pyc     | Bin 0 -> 1203 bytes
+ laskarit/viikko2/Maksukortti/src/maksukortti.py    |  27 ++++++++++
+ .../src/tests/__pycache__/__init__.cpython-39.pyc  | Bin 0 -> 172 bytes
+ .../maksukortti_test.cpython-39-pytest-6.2.5.pyc   | Bin 0 -> 3430 bytes
+ .../Maksukortti/src/tests/maksukortti_test.py      |  58 +++++++++++++++++++++
+ 5 files changed, 85 insertions(+)
+
+commit 094acdafc452477876ad22c7ce4776301f7dff18
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 16:37:53 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/Maksukortti/src/maksukortti.py            | 0
+ laskarit/viikko2/Maksukortti/src/tests/__init__.py         | 0
+ laskarit/viikko2/Maksukortti/src/tests/maksukortti_test.py | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2330fe753e8575269d085b212d2eb02abc7ded8a
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 16:33:30 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/tehtava.py | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 69bb9f270deba96f12a56e937bc9f3b97b3764a1
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Fri Nov 12 16:27:33 2021 +0200
+
+    initial commit
+
+ laskarit/viikko2/tehtava.py | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 842b4684ad8005c48f93ab4d72dc6fa0b1a099ab
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 19:36:25 2021 +0200
+
+    Update README.md
+
+ README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit b7fc8392ff3707d90e61cb55de7bed3be2d46fad
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 19:34:31 2021 +0200
+
+    Update README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 7cd787351a822b93775b70c864067700589be6b1
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 19:32:18 2021 +0200
+
+    Update tuntikirjanpito.md
+
+ documentation/tuntikirjanpito.md | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+commit d2ad24c990a2b92d5fba1ea98c627fb24fd8c074
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 19:22:59 2021 +0200
+
+    Update RequirementsSpecifications.md
+
+ documentation/RequirementsSpecifications.md | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit f6f5b42dec4e561b5a9b3217462e16c906510d2a
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 19:20:14 2021 +0200
+
+    initial commit
+
+ documentation/RequirementsSpecifications.md | 0
+ documentation/tuntikirjanpito.md            | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 68f1b4fe708ab193bea9f214ba6c510dc267bdc8
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 19:17:12 2021 +0200
+
+    initial commit
+
+ documentation | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit e6dc8b17ea160ec451a78f0b158ec450adc371b1
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 18:50:40 2021 +0200
+
+    initial commit
+
+ documentation | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0657ee0b0d648315e9a892026bd85887ccd8c85a
+Merge: 5476a97 273621b
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 18:40:47 2021 +0200
+
+    initial commit
+
+commit 5476a9757bd0a2237f7e59024beacc1e194b24f5
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 18:39:36 2021 +0200
+
+    initial commit
+
+ documentation                              |  1 +
+ dokumentaatio/RequirementsSpecification.md |  0
+ dokumentaatio/vaatimustenmaarittely.md     | 15 ---------------
+ 3 files changed, 1 insertion(+), 15 deletions(-)
+
+commit 273621bb3ee1f07eca855d23223e0c61e3a55212
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 18:36:22 2021 +0200
+
+    Update RequirementsSpecification.md
+
+ dokumentaatio/RequirementsSpecification.md | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+commit 640d2fb9ee8fe64782bdcdd84a16e6d349993781
+Merge: d572de7 4d6a13b
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 18:33:57 2021 +0200
+
+    initial commit
+
+commit d572de7ec47039743853b6362fff1590e4605a34
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 15:42:39 2021 +0200
+
+    initial commit
+
+ dokumentaatio/{vaatimustenmaarittely.md => RequirementsSpecification.md} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4d6a13b6e15104669e0c619c9ade12ab5bf9ebfc
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 15:40:01 2021 +0200
+
+    Update vaatimustenmaarittely.md
+
+ dokumentaatio/vaatimustenmaarittely.md | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+commit 644927a2121e1ee4baa0a37c348ca5c150d372ec
+Author: CatLin123 <81465678+CatLin123@users.noreply.github.com>
+Date:   Thu Nov 11 15:35:50 2021 +0200
+
+    Update vaatimustenmaarittely.md
+
+ dokumentaatio/vaatimustenmaarittely.md | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+
+commit 0a38dba710f98bcd16bd6ee04836d0f49294240e
+Merge: a009c60 e2a6c2a
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 15:32:36 2021 +0200
+
+    Merge branch 'master' of github.com:lindabjorkkis/OT-Harjoitustyo
+
+commit a009c60d12d90af3fee8e0c14a950120ee1bb84d
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Thu Nov 11 15:26:59 2021 +0200
+
+    initial commit
+
+ dokumentaatio/vaatimustenmaarittely.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e2a6c2ae0acaef37f944b8cb02299a837af6a81b
+Author: lindabjorkkis <81465678+lindabjorkkis@users.noreply.github.com>
+Date:   Sat Nov 6 19:45:08 2021 +0200
+
+    Update README.md
+
+ README.md | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit 94fa036a5ec77c05a81229dcc229de258b3f26b8
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Sat Nov 6 19:35:01 2021 +0200
+
+    initial commit
+
+ README.md                        |  2 ++
+ laskarit/viikko1/gitlog.txt      |  2 ++
+ laskarit/viikko1/komentorivi.txt |  4 ++++
+ tiedosto.txt                     | 38 ++++++++++++++++++++++++++++++++++++++
+ tiedosto.txt.pub                 |  1 +
+ 5 files changed, 47 insertions(+)
+
+commit 62fbf4bc51c00d548f22af8d6a184f6b8a4898f5
+Author: Linda B <bjorkenheimlinda@gmail.com>
+Date:   Sat Nov 6 16:23:59 2021 +0200
+
+    initial commit
+
+ README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)

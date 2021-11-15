@@ -1,4 +1,17 @@
-Folder PATH listing for volume OS
-Volume serial number is 92DF-64D3
-C:.
-No subfolders exist
+.
+├── Desktop -> /home/ad/home/b/bjlinda/Desktop
+├── Documents -> /home/ad/home/b/bjlinda/Documents
+├── Downloads -> /home/ad/home/b/bjlinda/Downloads
+└── kurssit
+    └── ot2021
+        └── viikko1
+            └── viikko1
+                ├── poetry.lock
+                ├── pyproject.toml
+                └── src
+                    ├── index.py
+                    ├── kassapaate.py
+                    ├── maksukortti.py
+                    └── tests
+                        ├── __init__.py
+                        └── maksukortti_test.py
