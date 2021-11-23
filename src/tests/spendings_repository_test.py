@@ -8,4 +8,4 @@ class TestSpendings(unittest.TestCase):
 
     def test_adding_summa(self):
         self.test_spendings.add_summa(2)
-        self.assertEqual("moi","moi")
+        self.assertEqual(self.test_spendings.getsumma(),2)
