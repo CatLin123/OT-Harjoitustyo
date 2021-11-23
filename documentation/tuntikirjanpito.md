@@ -14,4 +14,4 @@
 | 21.11 | 2    | Coding |
 | 22.11 | 3    | Coding |
 | 23.11 | 3    | Coding & sequences |
-| yht   | xx   | | 
+| total | xx   | | 
