@@ -1,11 +1,42 @@
-# This is my *project*
-## These are my tasks: 
+# Budget app
 
-[Gitlog](https://github.com/lindabjorkkis/OT-Harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+The application is a tool for butgeting, where the users can track montly spendigs. The user can set a monthly budget, add expences as different categories (e.g. groceries, clothes etc.) and track their monthly spendings.
 
-[Komentorivi](https://github.com/lindabjorkkis/OT-Harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+## Documentation
 
-[Tyoaikakirjanpito](https://github.com/CatLin123/OT-Harjoitustyo/blob/master/documentation/tuntikirjanpito.md)
+- [Requirements specifiction](documentation/RequirementsSpecifications.md)
+- [Hours worked](documentation/tuntikirjanpito.md)
 
-[Dokumentaatio](https://github.com/CatLin123/OT-Harjoitustyo/blob/master/documentation/RequirementsSpecifications.md)
+
+## Installation
+
+1. Install dependencies:
+
+```bash
+poetry install
+```
+
+2. Start application:
+
+```bash
+poetry run invoke start
+```
+
+## Testing
+
+Run tests:
+
+```bash
+poetry run invoke test
+```
+
+### Test coverage
+
+Generate test coverage report:
+
+```bash
+poetry run invoke coverage-report
+```
+
+
 
