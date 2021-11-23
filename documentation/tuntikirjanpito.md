@@ -1,8 +1,7 @@
-# työaikakirjanpito
+# Worked hours
 
-# työaikakirjanpito
 
-| päivä | aika | mitä tein  |
+| Day   | hours| Tasks  |
 | :----:|:-----| :-----|
 | 11.11 | 2    | Git commands, created documentation files |
 | 12.11 | 2    | Tests -Warm up |
