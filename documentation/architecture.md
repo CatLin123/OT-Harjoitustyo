@@ -4,12 +4,13 @@
 
 The application architecture follows this structure:
 
+- UI handles user interface
+- Services handles application logic
+- Respositories handles data
+- Entities classes managing information used in the application.
+
 ![](./Images/Folder_structure.png)
 
-UI: Handles user interface
-Services: Handles application logic
-Respositories: Handles data
-Entities: Classes managing information used in the application.
 
 ## User interface
 
