@@ -6,7 +6,7 @@ The application architecture follows this structure:
 
 - UI handles user interface
 - Services handles application logic
-- Respositories handles data
+- Respositories handles data storage
 - Entities classes managing information used in the application.
 
 ![](./Images/Folder_structure.png)
