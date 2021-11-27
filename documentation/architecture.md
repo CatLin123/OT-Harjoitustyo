@@ -4,7 +4,7 @@
 
 The application architecture follows this structure:
 
-![](.Images/Folder structure.png)
+![](./Images/Folder_structure.png)
 
 UI: Handles user interface
 Services: Handles application logic
@@ -23,8 +23,7 @@ The user interface will consist of three views:
 
 The logical data models consist of the classes User, Category and CategoryList
 
-INSERT
-
+![](./Images/Classes.png)
 
 ## Main functionalities
 
@@ -34,16 +33,16 @@ The main application functionalities are illustrated below.
 
 When the user inserts their username and a password to the displayed text fields and clicks _Log in_, the application proceeds as follows:
 
-INSERT
+TBD
 
 ### User creation
 
 When the user inserts a username that is not yet in use and a valid password and clicks "Create", the application runs as follows:
 
-INSERT
+![](./Images/Spending_creation.png)
 
 ### Managing and creating spendings
 
 When the user chooses a category and inserts a decimal number representing a spending (e.g. 4.5 euros spent on the category groceries) the application runs as follows:
 
-INSERT
+TBD
