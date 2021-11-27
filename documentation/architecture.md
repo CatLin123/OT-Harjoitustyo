@@ -1,10 +1,10 @@
 # Architecture description
 
-## Structure
+## Folder structure
 
-The application architechture follows this structure:
+The application architecture follows this structure:
 
-INSERT
+![](.Images/Folder structure.png)
 
 UI: Handles user interface
 Services: Handles application logic
