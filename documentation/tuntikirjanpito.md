@@ -14,4 +14,5 @@
 | 21.11 | 2    | Coding |
 | 22.11 | 3    | Coding |
 | 23.11 | 3    | Created tests |
-| total | xx   | | 
+| 27.11 | 5    | Coding, updated documentation | 
+| 29.11 | 5    | Coding, updated tests
