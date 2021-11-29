@@ -5,13 +5,13 @@ from entities.spendings import CategoryList
 
 class LoginView:
     '''Handles login attempts'''
-    def __init__(self, root, getloggedin):
+    def __init__(self, root, getloggedin, create_user):
         self.root = root
-        #self.handle_login = handle_login
-        self.frame = tk.Frame(master=self.root,)
+        self.frame = tk.Frame(master=self.root)
         self.username_entry = None
         self.password_entry = None
         self.getloggedin = getloggedin
+        self.create_user = create_user
         self.frame.place(relheight=0.8, relwidth=0.8)
         self.initialize()
 
@@ -49,7 +49,11 @@ class LoginView:
             self.getloggedin()
         else:
             self.show_error("Invalid username or password")
-        
+
+    def user_handler(self):
+        '''Button for creating new user'''
+        self.create_user()
+     
     def show_error(self, message):
         '''Error message in case of invalid login details'''
         self.error_label = tk.Label(master=self.frame, text = message)
@@ -62,6 +66,9 @@ class LoginView:
         login_button = tk.Button(master=self.frame, text="Log in", command=self.login_handler)
         login_button.place(relx=10, rely=1)
         login_button.pack()
+        create_user_button = tk.Button(master=self.frame, text="Create user", command=self.user_handler)
+        create_user_button.place(relx=10,rely=2)
+        create_user_button.pack()
         details_label = tk.Label(master=self.frame, text="Insert username: essi.esimerkki, password: salasana.")
         details_label.pack()
         info_label = tk.Label(master=self.frame, text="User creation will be developed later.")
