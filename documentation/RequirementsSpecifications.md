@@ -10,7 +10,7 @@ The application is a tool for butgeting, where the users can track montly spendi
 
 ## Basic functionality
 
-### Before logging in
+### Before logging in (Done)
 
 A user can:
 - Create a new account by choosing a 
@@ -25,9 +25,9 @@ Landing page displays:
 - Current month
 - Total spendings
 - Total left 
-- Spendings per category
+- Spendings per category (Done)
 - Settings icon
-- Option to add new spendings
+- Option to add new spendings (Done)
   - User chooses a category from a dropdown list and inserts amount in euros
 
 Settings page displays:
