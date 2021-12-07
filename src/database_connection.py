@@ -4,33 +4,28 @@ from tkinter import *
 
 
 def get_database_connection():
-    conn = sqlite3.connect('budget_app.db')
+    conn = sqlite3.connect('budget_app')
     return conn
 
-def drop_tables(get_database_connection):
-    cursor = get_database_connection().cursor()
+def drop_tables(connection):
+    cursor = connection.cursor()
 
-    cursor.execute("""
-    drop table if exits users;
-    """)
+    cursor.execute('''
+    drop table if exists users;
+    ''')
 
-    get_database_connection().commit()
+    connection.commit()
 
 def create_tables(connection):
-    #Create a database or connect to one
+ 
+    cursor = connection.cursor()
 
-    #Create cursor
-    cursor = get_database_connection().cursor()
+    cursor.execute('''
+                    CREATE TABLE IF NOT EXISTS users 
+                    (username text primary key, password text)
+                ''')
 
-    #create table
-
-    cursor.execute("""create table users (
-        user_name text,
-        password text,
-    );
-    """)
-    get_database_connection().commit()
-
+    connection.commit()
 
 def initialize_database():
     """Initializes database table

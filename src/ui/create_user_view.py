@@ -1,7 +1,9 @@
 '''Create user view'''
 import tkinter as tk
+from services.budget_service import budget_service, UsernameExistsError
 
 class CreateUserView:
+    """Class for creating user"""
     def __init__(self, root, show_login_view):
         self.root = root
         self.frame = tk.Frame(master=self.root)
@@ -19,11 +21,26 @@ class CreateUserView:
         '''Destroy current view function'''
         self.frame.destroy()
 
+    def show_error(self, message):
+        '''Error message in case of invalid login details'''
+        self.error_label = tk.Label(master=self.frame, text = message)
+        self.error_label.pack()
+
     def user_handler(self):
         '''Show username field'''
         #create user
-        username = self.user_name.get()
+        username = self.username.get()
         password = self.password.get()
+
+        if len(username) == 0 or len(password) == 0:
+            self.show_error("Please submit username and password")
+            return
+
+        try:
+            budget_service.create_user(username, password)
+            self.show_error("User created")
+        except UsernameExistsError:
+            self.show_error("Username already exists")
 
     def back_handler(self):
         '''Back to login'''

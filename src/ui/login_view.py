@@ -2,6 +2,7 @@
 import tkinter as tk
 from tkinter import ttk, StringVar, constants
 from entities.spendings import CategoryList
+from services.budget_service import budget_service, InvalidCredentialsError
 
 class LoginView:
     '''Handles login attempts'''
@@ -45,9 +46,10 @@ class LoginView:
         '''Functioning for managing logins'''
         username = self.username_entry.get()
         password = self.password_entry.get()
-        if username == "essi.esimerkki" and password == "salasana":
+        try:
+            budget_service.login(username,password)
             self.getloggedin()
-        else:
+        except InvalidCredentialsError:
             self.show_error("Invalid username or password")
 
     def user_handler(self):
@@ -69,7 +71,4 @@ class LoginView:
         create_user_button = tk.Button(master=self.frame, text="Create user", command=self.user_handler)
         create_user_button.place(relx=10,rely=2)
         create_user_button.pack()
-        details_label = tk.Label(master=self.frame, text="Insert username: essi.esimerkki, password: salasana.")
-        details_label.pack()
-        info_label = tk.Label(master=self.frame, text="User creation will be developed later.")
-        info_label.pack()
+
