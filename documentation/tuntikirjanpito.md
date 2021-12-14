@@ -18,5 +18,8 @@
 | 29.11 | 5    | Coding, updated tests |
 | 30.11 | 1    | Checked tests & coverage report |
 | 4.11  | 5    | Coding, database integration for user creation |
-| 7.12  | 5    | Coding, tests, release creation |
-| Total | 48   | -- |
+| 7.12  | 5    | Coding, created release |
+| 12.12 | 5    | Coding, database integration for spendings |
+| 13.12 | 5    | Coding, database integration for spendings |
+| 14.12 | 5    | Coding, tests, created release |
+| Total | 63   | -- |
