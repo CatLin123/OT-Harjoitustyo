@@ -11,7 +11,6 @@ The application architecture follows this structure:
 
 ![](./Images/Folder_structure.png)
 
-
 ## User interface
 
 The user interface will consist of three views:
@@ -20,11 +19,11 @@ The user interface will consist of three views:
 - User creation view
 - Spendings/budget management view
 
-## Application logic
+## Application logic & data storage
 
-The logical data models consist of the classes User, Category and CategoryList
+The logical data models consist of the classes User, Category and CategoryList. The data is stored in two tables: Users and categories.
 
-![](./Images/Classes.png)
+![](./Images/Structure.png)
 
 ## Main functionalities
 
@@ -38,9 +37,13 @@ TBD
 
 ### User creation
 
+When the user inserts a username and a correct password that are stored in the database, and clicks "Log in", the application runs as follows:
+
+![](./Images/Logging_in.png)
+
 When the user inserts a username that is not yet in use and a valid password and clicks "Create", the application runs as follows:
 
-![](./Images/Spending_creation.png)
+![](./Images/Creating_user.png)
 
 ### Managing and creating spendings
 
