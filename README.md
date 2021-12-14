@@ -45,5 +45,6 @@ poetry run invoke coverage-report
 ## Release
 
 Link to first release: https://github.com/CatLin123/OT-Harjoitustyo/releases/tag/viikko5
+
 Link to second release: https://github.com/CatLin123/OT-Harjoitustyo/releases/tag/viikko6
 
