@@ -1,7 +1,6 @@
 '''Login view'''
 import tkinter as tk
 from tkinter import ttk, StringVar, constants
-from entities.spendings import CategoryList
 from services.budget_service import budget_service, InvalidCredentialsError
 
 class LoginView:

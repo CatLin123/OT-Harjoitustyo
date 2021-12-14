@@ -3,6 +3,7 @@ from entities.spendings import Category
 from entities.user import User
 
 from repositories.user_repository import (user_repository as default_user_repository)
+from repositories.spendings_repository import (spendings_repository as default_spendings_repository)
 
 class InvalidCredentialsError(Exception):
     pass
@@ -13,19 +14,21 @@ class UsernameExistsError(Exception):
 class BudgetService:
     """Application logic class"""
 
-    def __init__(self, user_repository = default_user_repository):
+    def __init__(self, user_repository = default_user_repository, spendings_repository = default_spendings_repository):
         self.user = None
         self.user_repository = user_repository
+        self.spendings_repository = spendings_repository
 
-
-    def create_user(self, username, password, login = True):
+    def create_user(self, username, password, budget, login = True):
         """Creates new user and logs in"""
         existing_user = self.user_repository.find_by_username(username)
 
         if existing_user:
             raise UsernameExistsError(f'Username {username} already exists')
 
-        user = self.user_repository.create(User(username,password))
+        user = self.user_repository.create(User(username,password,budget,0))
+        spending = Category()
+        self.spendings_repository.set_sums(username,spending)
 
         if login:
             self.user = user
@@ -48,4 +51,39 @@ class BudgetService:
 
         return user
 
+    def get_current_user(self):
+        return self.user
+
+    def get_monthly(self,keyword):
+        user = self.user
+        return self.user_repository.get_budget(user, keyword)
+
+    def get_monthly_budget(self, keyword):
+        user = self.user
+        return self.user_repository.get_budget(user, keyword)
+
+    def create_spending(self, sum_content, category_content):
+        '''Spendingsview'''
+        user = self.user
+        self.spendings_repository.increase_sum(user.username, sum_content, category_content)
+        self.adjust_budget(sum_content, "Spent")
+        self.adjust_budget(sum_content, "Left")
+
+    def adjust_budget(self,sum_content, keyword):
+        user = self.user
+        self.user_repository.adjust_monthly_budget(user, sum_content, keyword)
+    
+    def get_sum(self, category):
+        user = self.user
+        summa = self.spendings_repository.return_sum(user.username, category)
+        return str(summa)
+
+    def get_columns_spendings(self):
+        return self.spendings_repository.get_columnlist()
+
+    def get_columns_users(self):
+        return self.user_repository.get_columnlist()
+
+    
+        
 budget_service = BudgetService()

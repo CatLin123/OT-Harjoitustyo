@@ -11,6 +11,7 @@ class CreateUserView:
         self.password = None
         self.show_login_view = show_login_view
         self.frame.place(relheight=0.8, relwidth=0.8)
+        self.monthly_budget = None
         self.initialize()
 
     def pack(self):
@@ -31,13 +32,14 @@ class CreateUserView:
         #create user
         username = self.username.get()
         password = self.password.get()
+        budget = self.monthly_budget.get()
 
         if len(username) == 0 or len(password) == 0:
             self.show_error("Please submit username and password")
             return
 
         try:
-            budget_service.create_user(username, password)
+            budget_service.create_user(username, password, budget)
             self.show_error("User created")
         except UsernameExistsError:
             self.show_error("Username already exists")
@@ -62,6 +64,13 @@ class CreateUserView:
         self.password = tk.Entry(master=self.frame)
         self.password.pack()
 
+    def initialize_monthly_budget(self):
+        """Set monthly budget"""
+        budget_lable = tk.Label(master=self.frame, text="Monthly Budget")
+        budget_lable.pack()
+        self.monthly_budget = tk.Entry(master=self.frame)
+        self.monthly_budget.pack()
+
     def initialize(self):
         '''Initialize'''
         info_label = tk.Label(master=self.frame, text="CREATE NEW USER")
@@ -69,6 +78,7 @@ class CreateUserView:
         info_label.pack()
         self.initialize_username()
         self.initialize_password()
+        self.initialize_monthly_budget()
         back_button = tk.Button(master=self.frame, text="Create user", command=self.user_handler)
         back_button.place(relx=10, rely=1)
         back_button.pack()
