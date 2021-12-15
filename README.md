@@ -7,7 +7,7 @@ The application is a tool for butgeting, where the users can track montly spendi
 - [Requirements specifiction](documentation/RequirementsSpecifications.md)
 - [Hours worked](documentation/tuntikirjanpito.md)
 - [Architecture](documentation/architecture.md)
-- [User_manual](documentation/architecture.md)
+- [User manual](documentation/user_manual.md)
 
 ## Installation
 
