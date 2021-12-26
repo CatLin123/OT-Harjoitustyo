@@ -49,3 +49,5 @@ Link to first release: https://github.com/CatLin123/OT-Harjoitustyo/releases/tag
 
 Link to second release: https://github.com/CatLin123/OT-Harjoitustyo/releases/tag/viikko6
 
+Link to final release: https://github.com/CatLin123/OT-Harjoitustyo/releases/tag/Loppupalautus
+
