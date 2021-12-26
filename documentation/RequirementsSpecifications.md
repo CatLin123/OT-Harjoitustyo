@@ -2,7 +2,7 @@
 
 ## Application purpose
 
-The application is a tool for butgeting, where the users can track montly spendigs. The user can set a monthly budget, add expences as different categories (e.g. groceries, clothes etc.) and track their monthly spendings.
+The application is a tool for butgeting, where the users can track montly spendings. The user can set a monthly budget, add expences as different categories (e.g. groceries, clothes etc.) and track their monthly spendings. A user must, however, reset the application at the end of each month as this is not done automatically.
 
 ## User interface draft
 
@@ -14,30 +14,23 @@ The application is a tool for butgeting, where the users can track montly spendi
 
 A user can:
 - Create a new account by choosing a 
-  - User name (any string)
-  - Password (must include 4 letters and one number)
-- Log in
-  - The user is informed if the username does not exist or the password is incorrect
+  - Username
+  - Password
+  - Monthly budget
+- Navigate back to the log in view
   
 ### After logging in
 
 Landing page displays:
-- Current month
 - Total spendings
 - Total left 
-- Spendings per category (Done)
-- Settings icon
-- Option to add new spendings (Done)
-  - User chooses a category from a dropdown list and inserts amount in euros
-
-Settings page displays:
-- Option to change montly budget
-- Option to delete existing categories (min 1)
-- Option to add new category (max 7)
-- Option to delete account
+- Spendings per category 
+- Option to add new spendings 
+  - User chooses a category from a dropdown list and inserts amount in euros (integer or decimal)
 
 ## Additional ideas
 
 Additional ideas include
 - Option to request new password
 - Visualisation of spendings on landing page
+- Option to choose customized categories
