@@ -22,4 +22,6 @@
 | 12.12 | 5    | Coding, database integration for spendings |
 | 13.12 | 5    | Coding, database integration for spendings |
 | 14.12 | 5    | Coding, tests, created release |
-| Total | 63   | -- |
+| 23.12 | 5    | Tests
+| 26.12 | 5    | Tests, coding, documentation
+| Total | 73   | -- |
