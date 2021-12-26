@@ -12,6 +12,8 @@ class CreateUserView:
         self.show_login_view = show_login_view
         self.frame.place(relheight=0.8, relwidth=0.8)
         self.monthly_budget = None
+        self.error_label = None
+        self.username =tk.Entry(master=self.frame)
         self.initialize()
 
     def pack(self):
@@ -23,7 +25,9 @@ class CreateUserView:
         self.frame.destroy()
 
     def show_error(self, message):
-        '''Error message in case of invalid login details'''
+        '''Error message in case of invalid login details.
+        Args:
+            message: message to be shown to the user as a label'''     
         self.error_label = tk.Label(master=self.frame, text = message)
         self.error_label.pack()
 
@@ -33,11 +37,9 @@ class CreateUserView:
         username = self.username.get()
         password = self.password.get()
         budget = self.monthly_budget.get()
-
         if len(username) == 0 or len(password) == 0:
             self.show_error("Please submit username and password")
             return
-
         try:
             budget_service.create_user(username, password, budget)
             self.show_error("User created")
@@ -53,7 +55,6 @@ class CreateUserView:
         username_label = tk.Label(master=self.frame, text="Username")
         username_label.place(relx=0.1, rely=0.8, anchor =tk.W)
         username_label.pack()
-        self.username =tk.Entry(master=self.frame)
         self.username.place(relx=0.9, rely=0.8, anchor = tk.E)
         self.username.pack()
 

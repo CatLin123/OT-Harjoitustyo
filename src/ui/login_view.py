@@ -1,6 +1,5 @@
 '''Login view'''
 import tkinter as tk
-from tkinter import ttk, StringVar, constants
 from services.budget_service import budget_service, InvalidCredentialsError
 
 class LoginView:
@@ -13,6 +12,8 @@ class LoginView:
         self.getloggedin = getloggedin
         self.create_user = create_user
         self.frame.place(relheight=0.8, relwidth=0.8)
+        self.error_variable = None
+        self.error_label = None
         self.initialize()
 
     def pack(self):
@@ -31,8 +32,6 @@ class LoginView:
         self.username_entry =tk.Entry(master=self.frame)
         self.username_entry.place(relx=0.9, rely=0.8, anchor = tk.E)
         self.username_entry.pack()
-        self.error_variable = None
-        self.error_label = None
 
     def initialize_password_field(self):
         '''Show password field'''
@@ -67,7 +66,8 @@ class LoginView:
         login_button = tk.Button(master=self.frame, text="Log in", command=self.login_handler)
         login_button.place(relx=10, rely=1)
         login_button.pack()
-        create_user_button = tk.Button(master=self.frame, text="Create user", command=self.user_handler)
+        create_user_button = tk.Button(master=self.frame,
+                                        text="Create user",
+                                        command=self.user_handler)
         create_user_button.place(relx=10,rely=2)
         create_user_button.pack()
-

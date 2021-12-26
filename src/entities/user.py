@@ -1,10 +1,10 @@
+"""User class"""
 class User:
     """Class defining a specific user
     Attributes:
-        username: string 
-        password: string 
+        username: string
+        password: string
     """
-
     def __init__(self, username, password, budget, spent):
         """Function for creating new user
         """

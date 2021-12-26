@@ -1,6 +1,6 @@
 '''Spendingsview'''
 import tkinter as tk
-from services.budget_service import budget_service, UsernameExistsError
+from services.budget_service import budget_service
 
 class SpendingsView:
     '''Spendingsview'''
@@ -16,9 +16,9 @@ class SpendingsView:
         self.spendings_list = budget_service.get_columns_spendings()
         self.total_list = budget_service.get_columns_users()
         self.initialize()
-          
-    
+
     def pack(self):
+        """Pack function"""
         self.add_frame.place(relx=0.1, rely=0.6, relheight=0.3, relwidth=0.8)
         for i in range(len(self.spendings_list)-1):
             category = tk.Entry(self.table_frame)
@@ -39,20 +39,27 @@ class SpendingsView:
         self.total_frame.place(relx=0, rely=0.7, relheight=0.3, relwidth=1)
 
     def create_spending(self):
-        '''Spendingsview''' 
-        sum_content = float(self.sum.get())
-        category_content = str(self.spending.get())
-        budget_service.create_spending(sum_content, category_content)
+        '''Spendingsview'''
+        try:
+            float(self.sum.get())
+            sum_content = float(self.sum.get())
+            category_content = str(self.spending.get())
+            budget_service.create_spending(sum_content, category_content)
+        except ValueError:
+            error_label = tk.Label(master=self.add_frame,
+                                text = "Insert integers or decimals only!")
+            error_label.place(relx=0.5, rely=0.95, anchor=tk.CENTER)
         self.sum.delete(0,tk.END)
         self.pack()
 
     def initialize(self):
         '''Spendingsview'''
         self.spending = tk.StringVar(self.add_frame)
-      
-        menu = tk.OptionMenu(self.add_frame, self.spending, *["Groceries", "Clothes", "Technology","Other"])
+        self.spending.set(str(self.spendings_list[1]))
+        menu = tk.OptionMenu(self.add_frame, self.spending,
+                            *["Groceries", "Clothes", "Technology","Other"])
         self.sum = tk.Entry(self.add_frame)
-        add = tk.Button(self.add_frame, text="Add", command=self.create_spending)          
+        add = tk.Button(self.add_frame, text="Add", command=self.create_spending)
         menu.place(relx=0.01, rely=0.8, anchor = tk.W)
         add.place(relx=0.9, rely=0.8, anchor = tk.E)
         self.sum.place(relx=0.5, rely=0.8, anchor = tk.CENTER)

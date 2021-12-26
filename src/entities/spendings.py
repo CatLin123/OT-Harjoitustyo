@@ -4,4 +4,3 @@ class Category:
     '''Category class'''
     def __init__(self):
         self.summa = 0.00
-
