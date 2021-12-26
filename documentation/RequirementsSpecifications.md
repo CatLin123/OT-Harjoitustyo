@@ -6,7 +6,7 @@ The application is a tool for butgeting, where the users can track montly spendi
 
 ## User interface draft
 
-![](./Images/Budget-app.jpg)
+![](./Images/Budget-app.png)
 
 ## Basic functionality
 
